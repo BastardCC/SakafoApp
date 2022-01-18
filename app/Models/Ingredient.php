@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Ingredient extends Model
+{
+    protected $fillable = [
+        'ingredient_name', 'ingredient_unit'
+    ];
+
+    protected $primaryKey = 'ingredient_id';
+
+    use HasFactory;
+}
