@@ -44,6 +44,7 @@ Route::post('/weeks', [WeekContainer::class, 'store']);
 Route::get('/weeks/{week_id}', [WeekContainer::class, 'show']);
 Route::post('/weeks/{week_id}', [WeekContainer::class, 'update']);
 Route::delete('/weeks/{week_id}', [WeekContainer::class, 'delete']);
+Route::delete('/weeks/{week_id}', [WeekContainer::class, 'aaa']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
